@@ -37,7 +37,11 @@ export default function Home() {
         </h1>
         <div className="flex flex-col md:flex-row justify-center items-center mt-4 md:mt-2">
           {/* github button */}
-          <a className="flex flex-row border border-white text-white/70 px-8 py-2 md:px-12 md:py-2 rounded-full mt-6 md:mt-10 text-md md:text-lg shadow-lg hover:scale-105 hover:bg-white/10 hover:text-white hover:border-white transition-all duration-300">
+          <a
+            href="https://github.com/amalsony/universalnotes"
+            target="_blank"
+            className="flex flex-row border border-white text-white/70 px-8 py-2 md:px-12 md:py-2 rounded-full mt-6 md:mt-10 text-md md:text-lg shadow-lg hover:scale-105 hover:bg-white/10 hover:text-white hover:border-white transition-all duration-300"
+          >
             <Image
               src="/github-logo.svg"
               alt="Github Logo"
@@ -49,7 +53,11 @@ export default function Home() {
             <span>Github</span>
           </a>
           {/* discord button */}
-          <a className="flex flex-row mt-4 md:ml-10 border border-white text-white/70 px-8 py-2 md:px-12 md:py-2 rounded-full md:mt-10 text-md md:text-lg shadow-lg hover:scale-105 hover:bg-white/10 hover:text-white hover:border-white transition-all duration-300">
+          <a
+            href="https://discord.gg/aQwaMY39"
+            target="_blank"
+            className="flex flex-row mt-4 md:ml-10 border border-white text-white/70 px-8 py-2 md:px-12 md:py-2 rounded-full md:mt-10 text-md md:text-lg shadow-lg hover:scale-105 hover:bg-white/10 hover:text-white hover:border-white transition-all duration-300"
+          >
             <Image
               src="/discord-logo.svg"
               alt="Discord Logo"
