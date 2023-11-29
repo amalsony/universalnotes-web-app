@@ -54,7 +54,7 @@ export default function Home() {
           </a>
           {/* discord button */}
           <a
-            href="https://discord.gg/aQwaMY39"
+            href="https://discord.gg/22eq948CwD"
             target="_blank"
             className="flex flex-row mt-4 md:ml-10 border border-white text-white/70 px-8 py-2 md:px-12 md:py-2 rounded-full md:mt-10 text-md md:text-lg shadow-lg hover:scale-105 hover:bg-white/10 hover:text-white hover:border-white transition-all duration-300"
           >
