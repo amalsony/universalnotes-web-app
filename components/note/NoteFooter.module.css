@@ -33,7 +33,7 @@
   font-size: 16px !important;
   font-weight: bold !important;
   cursor: pointer !important;
-  transition: all 0.2s ease-in-out !important;
+  transition: all 0.1s ease-in-out !important;
 }
 
 .note_footer_button:hover {
