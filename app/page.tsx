@@ -9,7 +9,7 @@ import axios from "axios";
 import { GoogleLogin as GoogleLoginButton } from "@react-oauth/google";
 
 export default function Home() {
-  const [userInfo, setUserInfo] = useState(null);
+  const [userInfo, setUserInfo] = useState<any>(null);
 
   useEffect(() => {
     axios
@@ -51,7 +51,7 @@ export default function Home() {
                 href="/api/auth/logout"
                 className="bg-white/90 text-black/90 font-bold px-8 py-2 md:px-12 md:py-3 rounded-full text-lg md:text-lg shadow-lg hover:scale-105 hover:bg-white hover:text-black transition-all duration-300 block text-center w-max"
               >
-                logged in as {userInfo.email}
+                logged in as {userInfo?.email}
               </a>
             ) : (
               <a
