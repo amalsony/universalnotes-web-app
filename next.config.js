@@ -13,7 +13,7 @@
 const rewritesConfig = [
   {
     source: "/api/:path*",
-    destination: "https://api.universalnotes.org/:path*",
+    destination: "http://localhost:8000/:path*",
   },
 ];
 
