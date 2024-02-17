@@ -13,7 +13,7 @@ export default function Home() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/api/auth/me")
+      .get("https://www.universalnotes.org/api/auth/me")
       .then((res) => {
         setUserInfo(res.data);
         console.log(res.data);
