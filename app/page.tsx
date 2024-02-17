@@ -12,9 +12,8 @@ export default function Home() {
   const [userInfo, setUserInfo] = useState<any>(null);
 
   useEffect(() => {
-    console.log("useEffect called");
     axios
-      .get("https://www.universalnotes.org/api/auth/me", {
+      .get("https://api.universalnotes.org/auth/me", {
         withCredentials: true,
       })
       .then((res) => {
