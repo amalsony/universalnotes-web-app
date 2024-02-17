@@ -11,12 +11,17 @@ import { GoogleLogin as GoogleLoginButton } from "@react-oauth/google";
 export default function Home() {
   const [userInfo, setUserInfo] = useState<any>(null);
 
+  console.log("from home", userInfo);
+
   useEffect(() => {
+    console.log("useEffect called");
     axios
-      .get("https://wwww.universalnotes.org/api/auth/me")
+      .get("https://api.universalnotes.org/auth/me", {
+        withCredentials: true,
+      })
       .then((res) => {
         setUserInfo(res.data);
-        console.log(res.data);
+        console.log("res.data", res.data);
       })
       .catch((err) => {
         console.log(err.response);
