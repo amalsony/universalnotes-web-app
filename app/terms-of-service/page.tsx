@@ -6,7 +6,7 @@ export default function TermsOfService() {
       <div className="w-full flex flex-col items-left px-4 my-10 max-w-6xl">
         <h1 className="text-base text-black mb-8 text-center">
           <span className="text-2xl font-bold">
-            UniversalNotes' Terms of Service
+            UniversalNotes&apos; Terms of Service
           </span>
         </h1>
         <div className="w-full flex flex-col pb-2 mt-4">

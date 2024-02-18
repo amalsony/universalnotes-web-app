@@ -4,7 +4,7 @@ export default function PrivacyPolicy() {
       <div className="w-full flex flex-col items-left px-4 my-10 max-w-6xl">
         <h1 className="text-base text-black mb-8 text-center">
           <span className="text-2xl font-bold">
-            UniversalNotes' Privacy Policy
+            UniversalNotes&apos; Privacy Policy
           </span>
         </h1>
         <div className="w-full flex flex-row pb-2">
