@@ -45,8 +45,12 @@ export default function Home() {
           <h1 className="text-3xl md:text-5xl text-white/90 font-bold text-center mx-4">
             Community Notes for every website.
           </h1>
+          <h2 className="text-2xl md:text-4xl text-white/90 font-medium text-center mx-4 mt-8 md:mt-10">
+            The wait is nearly over...
+          </h2>
           {/* login */}
-          <div className="flex flex-row justify-center items-center mt-8 md:mt-10">
+          <div className="flex flex-row justify-center items-center mt-4 md:mt-8">
+            {/*
             {userInfo ? (
               <a
                 href="/api/auth/logout"
@@ -54,14 +58,21 @@ export default function Home() {
               >
                 logged in as {userInfo?.email}
               </a>
-            ) : (
-              <a
+            ) : ( */}
+            {/* <a
                 href="/api/auth/google"
                 className="bg-white/90 text-black/90 font-bold px-8 py-2 md:px-12 md:py-3 rounded-full text-lg md:text-lg shadow-lg hover:scale-105 hover:bg-white hover:text-black transition-all duration-300 block text-center w-max"
               >
                 Continue with Google
-              </a>
-            )}
+              </a> */}
+            {/* )} */}
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfMeaDnl1ZHbFy6ZRbxQWSBV5n5jNsIOMrwP9ZWs1r5m_evYg/viewform"
+              target="_blank"
+              className="bg-white/90 text-black/90 font-bold px-8 py-2 md:px-12 md:py-3 rounded-full text-lg md:text-lg shadow-lg hover:scale-105 hover:bg-white hover:text-black transition-all duration-300 block text-center w-max mt-4 md:mt-6"
+            >
+              Join the waitlist
+            </a>
           </div>
         </div>
         <div className="px-4 w-full max-w-2xl">
