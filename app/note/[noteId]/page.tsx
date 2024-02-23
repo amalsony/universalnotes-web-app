@@ -29,10 +29,15 @@ export default function NotePage({ params }: { params: { noteId: string } }) {
 
   function Like() {
     axios
-      .post("https://api.universalnotes.org/notes/like", {
-        withCredentials: true,
-        noteId: params.noteId,
-      })
+      .post(
+        "https://api.universalnotes.org/notes/like",
+        {
+          noteId: params.noteId,
+        },
+        {
+          withCredentials: true,
+        }
+      )
       .then((res) => {
         setNote(res.data.note);
       })
@@ -43,10 +48,15 @@ export default function NotePage({ params }: { params: { noteId: string } }) {
 
   function Unlike() {
     axios
-      .post("https://api.universalnotes.org/notes/unlike", {
-        withCredentials: true,
-        noteId: params.noteId,
-      })
+      .post(
+        "https://api.universalnotes.org/notes/unlike",
+        {
+          noteId: params.noteId,
+        },
+        {
+          withCredentials: true,
+        }
+      )
       .then((res) => {
         setNote(res.data.note);
       })
@@ -57,10 +67,15 @@ export default function NotePage({ params }: { params: { noteId: string } }) {
 
   function Dislike() {
     axios
-      .post("https://api.universalnotes.org/notes/dislike", {
-        withCredentials: true,
-        noteId: params.noteId,
-      })
+      .post(
+        "https://api.universalnotes.org/notes/dislike",
+        {
+          noteId: params.noteId,
+        },
+        {
+          withCredentials: true,
+        }
+      )
       .then((res) => {
         setNote(res.data.note);
       })
@@ -71,10 +86,15 @@ export default function NotePage({ params }: { params: { noteId: string } }) {
 
   function Undislike() {
     axios
-      .post("https://api.universalnotes.org/notes/undislike", {
-        withCredentials: true,
-        noteId: params.noteId,
-      })
+      .post(
+        "https://api.universalnotes.org/notes/undislike",
+        {
+          noteId: params.noteId,
+        },
+        {
+          withCredentials: true,
+        }
+      )
       .then((res) => {
         setNote(res.data.note);
       })
@@ -85,10 +105,15 @@ export default function NotePage({ params }: { params: { noteId: string } }) {
 
   function DeleteNote() {
     axios
-      .post(`https://api.universalnotes.org/notes/delete-note`, {
-        withCredentials: true,
-        noteId: params.noteId,
-      })
+      .post(
+        `https://api.universalnotes.org/notes/delete-note`,
+        {
+          noteId: params.noteId,
+        },
+        {
+          withCredentials: true,
+        }
+      )
       .then(() => {
         setIsDeleted(true);
       })
