@@ -7,11 +7,13 @@ import { Providers } from "@/context/Providers";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
+const metadata: Metadata = {
   title: "UniversalNotes - Community Notes for every website",
   description:
     "UniversalNotes is an open source non-profit browser extension that brings Community Notes from Twitter / X to the rest of the internet.",
 };
+
+export { metadata };
 
 export default function RootLayout({
   children,

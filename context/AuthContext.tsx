@@ -15,7 +15,7 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
 
   useEffect(() => {
     axios
-      .get("https://universalnotes.org/auth/me", {
+      .get("https://api.universalnotes.org/auth/me", {
         withCredentials: true,
       })
       .then((res) => {
