@@ -109,7 +109,10 @@ export default function NotePage({ params }: { params: { noteId: string } }) {
   useEffect(() => {
     axios
       .get(
-        `https://api.universalnotes.org/notes/show-note?noteId=${params.noteId}`
+        `https://api.universalnotes.org/notes/show-note?noteId=${params.noteId}`,
+        {
+          withCredentials: true,
+        }
       )
       .then((res) => {
         setNote(res.data.note);
