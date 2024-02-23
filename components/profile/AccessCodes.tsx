@@ -1,9 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
 import { useAuth } from "@/context/AuthContext";
-
-// Axios
-import axios from "axios";
 
 // Components
 import ErrorPageComponent from "@/components/general/ErrorPageComponent";
