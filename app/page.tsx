@@ -1,6 +1,30 @@
 "use client";
 import Image from "next/image";
 
+import type { Metadata } from "next";
+
+const metadata: Metadata = {
+  title: "UniversalNotes - Community Notes for every website",
+  description:
+    "UniversalNotes is an open source non-profit browser extension that brings Community Notes from Twitter / X to the rest of the internet.",
+  openGraph: {
+    title: "UniversalNotes - Community Notes for every website",
+    description:
+      "UniversalNotes is an open source non-profit browser extension that brings Community Notes from Twitter / X to the rest of the internet.",
+    url: "/*",
+    siteName: "UniversalNotes",
+    images: [
+      {
+        url: "/UniversalNotes_OpenGraph.png",
+        width: 800,
+        height: 540,
+      },
+    ],
+  },
+};
+
+export { metadata };
+
 // Components
 import Navbar from "@/components/landing/Navbar";
 
