@@ -17,7 +17,7 @@ export default function Home() {
             href="https://chromewebstore.google.com/detail/universalnotes/ebdoepcapegdgjjbhplphgkacdodnffl"
             className="bg-white/[.10] hover:bg-white/[.22] border border-white/[.18] py-1 px-4 rounded-full mb-4 transition-all duration-300 cursor-pointer"
           >
-            <p className="text-white/90 text-sm md:text-lg">
+            <p className="text-white/90 text-sm md:text-base">
               Now available for Chrome & Arc
             </p>
           </a>
