@@ -20,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} tracking-normal`}>
+      <body className={`${inter.className} tracking-tighter`}>
         <Providers>{children}</Providers>
       </body>
     </html>
