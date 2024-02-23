@@ -15,8 +15,8 @@ const metadata: Metadata = {
     images: [
       {
         url: "/UniversalNotes_OpenGraph.png",
-        width: 800,
-        height: 540,
+        width: 1200,
+        height: 707,
       },
     ],
   },
@@ -40,7 +40,7 @@ export default function Home() {
             href="https://chromewebstore.google.com/detail/universalnotes/ebdoepcapegdgjjbhplphgkacdodnffl"
             className="bg-white/[.10] hover:bg-white/[.22] border border-white/[.18] py-1 px-4 rounded-full mb-4 transition-all duration-300 cursor-pointer"
           >
-            <p className="text-white/90 text-sm md:text-base">
+            <p className="text-white/90 text-sm md:text-lg">
               Now available for Chrome & Arc
             </p>
           </a>
