@@ -14,7 +14,7 @@ const metadata: Metadata = {
     siteName: "UniversalNotes",
     images: [
       {
-        url: "/UniversalNotes_OpenGraph.png",
+        url: "/UniversalNotes_OpenGraphImage.png",
         width: 1200,
         height: 707,
       },
