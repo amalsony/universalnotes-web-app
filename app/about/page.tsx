@@ -16,12 +16,12 @@ export default function About() {
           <div className="flex flex-col justify-center items-center px-2 text-white/90 text-xl mt-10 max-w-xl">
             <p className="mt-8 font-bold text-center text-white/90 text-xl">
               {" "}
-              We're on a mission to end misinformation on the internet.{" "}
+              We&apos;re on a mission to end misinformation on the internet.{" "}
             </p>
             <span className="mt-4"></span>
             <p className="mt-8 text-center text-white/90 text-xl">
-              UniversalNotes follows X/Twitter's Community Notes model to add
-              crowdsourced context to websites.{" "}
+              UniversalNotes follows X/Twitter&apos;s Community Notes model to
+              add crowdsourced context to websites.{" "}
             </p>{" "}
             <p className="mt-8 text-center text-white/90 text-xl">
               Users view and vote on important context about misleading sites or

@@ -22,7 +22,7 @@ export default function Login() {
           <div className="flex flex-col justify-center items-center px-4 py-10 md:pt-32 md:pb-14 w-full max-w-5xl">
             <h1 className="text-3xl md:text-4xl text-white/80 font-medium text-center mx-4">
               <span className="text-white/90">
-                Hi {userInfo?.name?.split(" ")[0]}, let's get you set up!
+                Hi {userInfo?.name?.split(" ")[0]}, let&apos;s get you set up!
               </span>
             </h1>
             <div className="mt-24 max-w-xl">

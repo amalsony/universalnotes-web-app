@@ -71,10 +71,10 @@ export default function Profile() {
           <div>
             <p className="text-center font-bold mt-8 text-white/90">
               Need help with your account? Please email us at
-              universalnotesorg@gmail.com and we'll assist you promptly.
+              universalnotesorg@gmail.com and we&apos;ll assist you promptly.
             </p>
             <p className="text-center mt-8 text-white/90">
-              We're working to making this page more functional soon.
+              We&apos;re working to making this page more functional soon.
             </p>
           </div>
         </div>
