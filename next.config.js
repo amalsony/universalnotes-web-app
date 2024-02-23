@@ -11,6 +11,14 @@ const rewritesConfig = [
 
 const nextConfig = {
   rewrites: async () => rewritesConfig,
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "lh3.googleusercontent.com",
+      },
+    ],
+  },
 };
 
 module.exports = nextConfig;

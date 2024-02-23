@@ -23,7 +23,7 @@ export default function Note({
   const niceURL = note ? getNiceURL(note) : null;
 
   function getNiceURL(note: any) {
-    return note.url.domain + note.url.path;
+    return note.url.domain + note.url.path.replace(/\/$/, "");
   }
 
   return (
