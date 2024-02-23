@@ -21,7 +21,7 @@ export default function Profile() {
 
   function handleLogout() {
     axios
-      .post("https://api.universalnotes.org/auth/logout", {
+      .post("/api/auth/logout", {
         withCredentials: true,
       })
       .then(() => {

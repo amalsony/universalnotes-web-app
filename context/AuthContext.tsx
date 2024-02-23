@@ -31,7 +31,7 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
   useEffect(() => {
     if (userInfo) {
       axios
-        .get("https://api.universalnotes.org/auth/access-codes")
+        .get("/api/auth/access-codes")
         .then((res) => {
           setAccessCodes(res.data.data);
         })

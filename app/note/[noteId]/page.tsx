@@ -29,7 +29,7 @@ export default function NotePage({ params }: { params: { noteId: string } }) {
 
   function Like() {
     axios
-      .post("https://api.universalnotes.org/notes/like", {
+      .post("/api/notes/like", {
         noteId: params.noteId,
       })
       .then((res) => {
@@ -42,7 +42,7 @@ export default function NotePage({ params }: { params: { noteId: string } }) {
 
   function Unlike() {
     axios
-      .post("https://api.universalnotes.org/notes/unlike", {
+      .post("/api/notes/unlike", {
         noteId: params.noteId,
       })
       .then((res) => {
@@ -55,7 +55,7 @@ export default function NotePage({ params }: { params: { noteId: string } }) {
 
   function Dislike() {
     axios
-      .post("https://api.universalnotes.org/notes/dislike", {
+      .post("/api/notes/dislike", {
         noteId: params.noteId,
       })
       .then((res) => {
@@ -68,7 +68,7 @@ export default function NotePage({ params }: { params: { noteId: string } }) {
 
   function Undislike() {
     axios
-      .post("https://api.universalnotes.org/notes/undislike", {
+      .post("/api/notes/undislike", {
         noteId: params.noteId,
       })
       .then((res) => {
@@ -81,7 +81,7 @@ export default function NotePage({ params }: { params: { noteId: string } }) {
 
   function DeleteNote() {
     axios
-      .post(`https://api.universalnotes.org/notes/delete-note`, {
+      .post(`/api/notes/delete-note`, {
         noteId: params.noteId,
       })
       .then(() => {
@@ -108,9 +108,7 @@ export default function NotePage({ params }: { params: { noteId: string } }) {
 
   useEffect(() => {
     axios
-      .get(
-        `https://api.universalnotes.org/notes/show-note?noteId=${params.noteId}`
-      )
+      .get(`/api/notes/show-note?noteId=${params.noteId}`)
       .then((res) => {
         setNote(res.data.note);
         console.log(res.data.note);

@@ -5,7 +5,7 @@
 const rewritesConfig = [
   {
     source: "/api/:path*",
-    destination: "https://api.universalnotes.org/:path*",
+    destination: "/api/:path*",
   },
 ];
 
