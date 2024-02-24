@@ -33,15 +33,28 @@
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
-  transition: all 0.1s ease-in-out;
+  transition: all 0.22s ease-in-out;
 }
 
 .note_footer_button:hover {
   background-color: #f2f2f2;
 }
 
-.note_footer_button.note_liked_button {
+.note_footer_delete_button {
+  color: #333;
+  height: unset;
+  width: unset;
+  font-size: 0.8rem;
+  margin-right: 0.42rem;
+  border-radius: 2rem;
   transition: all 0.1s ease-in-out;
+}
+
+.note_footer_delete_button:hover {
+  color: #ff4d4f;
+}
+
+.note_footer_button.note_liked_button {
   border: 1px solid #fc035a;
   background-color: rgba(252, 3, 90, 0.1);
 }

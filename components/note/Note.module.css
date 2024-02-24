@@ -10,6 +10,16 @@
   padding: 0 !important;
   width: 100%;
   z-index: 2;
+  animation: fadeIn 0.24s ease-in-out !important;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .universal_notes_header {

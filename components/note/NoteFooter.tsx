@@ -8,12 +8,14 @@ export default function NoteFooter({
   unlike,
   dislike,
   undislike,
+  deleteNote,
 }: {
   note: any;
   like: any;
   unlike: any;
   dislike: any;
   undislike: any;
+  deleteNote?: any;
 }) {
   function handleLike() {
     note?.isLiked ? unlike() : like();
@@ -23,6 +25,10 @@ export default function NoteFooter({
     note?.isDisliked ? undislike() : dislike();
   }
 
+  function handleDelete() {
+    deleteNote();
+  }
+
   return (
     <div className={styles.note_footer_container}>
       <div className={styles.note_footer_container_left}>
@@ -30,6 +36,14 @@ export default function NoteFooter({
       </div>
       <div className={styles.note_footer_container_right}>
         <div className="flex justify-center items-center">
+          {deleteNote && (
+            <button
+              className={styles.note_footer_delete_button}
+              onClick={handleDelete}
+            >
+              <span>Delete</span>
+            </button>
+          )}
           <button
             className={`${styles.note_footer_button} ${
               note?.isLiked ? styles.note_liked_button : ""

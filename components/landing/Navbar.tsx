@@ -3,6 +3,7 @@ import Link from "next/link";
 // Components
 import TextLogo from "@/assets/TextLogo";
 import LoginButton from "./LoginButton";
+import MyNotesButton from "./MyNotesButton";
 
 export default function Navbar() {
   return (
@@ -28,6 +29,7 @@ export default function Navbar() {
               >
                 Contact
               </Link>
+              <MyNotesButton />
             </div>
           </div>
           <LoginButton />

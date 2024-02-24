@@ -13,12 +13,14 @@ export default function Note({
   unlike,
   dislike,
   undislike,
+  deleteNote,
 }: {
   note: any;
   like: any;
   unlike: any;
   dislike: any;
   undislike: any;
+  deleteNote?: any;
 }) {
   const niceURL = note ? getNiceURL(note) : null;
 
@@ -58,6 +60,7 @@ export default function Note({
         unlike={unlike}
         dislike={dislike}
         undislike={undislike}
+        deleteNote={deleteNote}
       />
     </div>
   );
