@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 // Components
+import HomeButton from "./HomeButton";
 import TextLogo from "@/assets/TextLogo";
 import LoginButton from "./LoginButton";
 import MyNotesButton from "./MyNotesButton";
@@ -17,6 +18,7 @@ export default function Navbar() {
               </div>
             </div>
             <div className="hidden md:flex items-center">
+              <HomeButton />
               <Link
                 href="/about"
                 className="text-white/90 py-5 px-3 hover:bg-white/10 transition-all duration-300"
