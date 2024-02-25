@@ -56,7 +56,8 @@ export default function Login() {
               <div className="flex flex-col justify-center items-center px-2 text-white/90 text-xl mt-12">
                 <h2 className="font-bold text-center">
                   Click on the extension, and continue with Google to write or
-                  vote on notes. You don't need to login to just view notes.
+                  vote on notes. You don&apos;t need to login to just view
+                  notes.
                 </h2>
                 <Image
                   src="/Logging_into_UniversalNotes.png"
