@@ -75,8 +75,8 @@ export default function Login() {
                 <Image
                   src="/Writing_A_UniversalNote.png"
                   alt="Image showing UniversalNotes's note input"
-                  width={506}
-                  height={289}
+                  width={1002}
+                  height={482}
                   className="rounded-lg h-72 w-auto my-4"
                 />
               </div>
@@ -85,7 +85,7 @@ export default function Login() {
                   Welcome to UniversalNotes!
                 </h2>
                 <p className="text-white/80 text-xl mt-4 text-center">
-                  You can now write, view, and vote on notes. ✍️🚀
+                  You can now write, view, and vote on notes. ✍️ 🚀
                 </p>
               </div>
             </div>
