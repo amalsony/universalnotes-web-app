@@ -5,26 +5,26 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 
 // Navigation
-import { useRouter } from "next/navigation";
+// import { useRouter } from "next/navigation";
 
 // Context
-import { useAuth } from "@/context/AuthContext";
+// import { useAuth } from "@/context/AuthContext";
 
 // Components
 import Note from "@/components/note/Note";
 import ErrorPageComponent from "@/components/general/ErrorPageComponent";
 
 export default function HomeFeed() {
-  const router = useRouter();
+  // const router = useRouter();
 
-  const { userInfo } = useAuth();
-  const { authLoading } = useAuth();
+  // const { userInfo } = useAuth();
+  // const { authLoading } = useAuth();
 
-  useEffect(() => {
-    if (!userInfo && !authLoading) {
-      router.push("/");
-    }
-  }, [userInfo, authLoading]);
+  // useEffect(() => {
+  //   if (!userInfo && !authLoading) {
+  //     router.push("/");
+  //   }
+  // }, [userInfo, authLoading]);
 
   // States
   const [notes, setNotes] = useState<any>([]);
