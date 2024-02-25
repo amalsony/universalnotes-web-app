@@ -68,8 +68,8 @@ export default function Login() {
               </div>
               <div className="flex flex-col justify-center items-center px-2 text-white/90 text-xl mt-12">
                 <h2 className="font-bold text-center">
-                  Try adding a note to this page. Don't worry, only you can see
-                  it.
+                  Try adding a note to this page. Don&apos;t worry, only you can
+                  see it.
                 </h2>
                 <Image
                   src="/Writing_A_UniversalNote.png"
@@ -84,7 +84,7 @@ export default function Login() {
                   Welcome to UniversalNotes!
                 </h2>
                 <p className="text-white/80 text-xl mt-4 text-center">
-                  You can now write, view, and vote on notes.
+                  You can now write, view, and vote on notes. ✍️🚀
                 </p>
               </div>
             </div>
