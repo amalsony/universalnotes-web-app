@@ -22,7 +22,7 @@ export default function Login() {
     if (!userInfo && !authLoading) {
       router.push("/login");
     }
-  }, [userInfo]);
+  }, [userInfo, authLoading]);
 
   return (
     <div className="flex flex-col bg-gradient-to-b from-gray-900 to-slate-950 min-h-screen">
@@ -94,8 +94,8 @@ export default function Login() {
                   You can now write, view, and vote on notes.
                 </p>
                 <p className="text-white/80 text-xl mt-4 text-center">
-                  Try adding a note to this page (Don't worry, only you can see
-                  it).
+                  Try adding a note to this page (Don&apost worry, only you can
+                  see it).
                 </p>
               </div>
             </div>
