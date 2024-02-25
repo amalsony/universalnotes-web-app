@@ -7,6 +7,9 @@ import Logo from "@/assets/SmallLogo";
 // Components
 import NoteFooter from "./NoteFooter";
 
+// Utilities
+import { getPostTime } from "@/utilities/getPostTime";
+
 export default function Note({
   note,
   like,
@@ -37,6 +40,9 @@ export default function Note({
             UniversalNotes Contributors added context
           </h2>
         </div>
+        <p className={styles.note_header_time}>
+          {getPostTime(note?.createdAt)}
+        </p>
       </div>
       <div className={styles.universal_notes_content}>
         <div className={styles.header}>

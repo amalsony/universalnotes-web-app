@@ -49,6 +49,14 @@
   margin-right: 8px !important;
 }
 
+.note_header_time {
+  all: initial;
+  font-family: Arial, sans-serif !important;
+  color: #6b7280 !important;
+  font-size: 14px !important;
+  margin-left: 8px !important;
+}
+
 .universal_notes_close_button {
   all: initial;
   display: flex !important;
