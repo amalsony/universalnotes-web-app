@@ -55,8 +55,8 @@ export default function Login() {
               </div>
               <div className="flex flex-col justify-center items-center px-2 text-white/90 text-xl mt-12">
                 <h2 className="font-bold text-center">
-                  Click on the extension, and continue with Google to enter your
-                  access code and write notes.
+                  Click on the extension, and continue with Google to write or
+                  vote on notes. You don't need to login to just view notes.
                 </h2>
                 <Image
                   src="/Logging_into_UniversalNotes.png"
@@ -66,36 +66,25 @@ export default function Login() {
                   className="rounded-lg h-72 w-auto my-4"
                 />
               </div>
-              {/* <div className="flex flex-col justify-center items-center px-2 text-white/90 text-xl mt-12">
+              <div className="flex flex-col justify-center items-center px-2 text-white/90 text-xl mt-12">
                 <h2 className="font-bold text-center">
-                  Enter an access code. DM{" "}
-                  <a
-                    target="_blank"
-                    href="https://www.twitter.com/amalsony_"
-                    className="text-blue-400 hover:underline"
-                  >
-                    @amalsony_
-                  </a>{" "}
-                  if you need one.
+                  Try adding a note to this page. Don't worry, only you can see
+                  it.
                 </h2>
                 <Image
-                  src="/Access_Code.png"
-                  alt="Image showing UniversalNotes's access code input"
+                  src="/Writing_A_UniversalNote.png"
+                  alt="Image showing UniversalNotes's note input"
                   width={506}
                   height={289}
                   className="rounded-lg h-72 w-auto my-4"
                 />
-              </div> */}
+              </div>
               <div className="flex flex-col justify-center items-center px-2 text-white/90 text-2xl mt-12">
                 <h2 className="font-bold text-center">
                   Welcome to UniversalNotes!
                 </h2>
                 <p className="text-white/80 text-xl mt-4 text-center">
                   You can now write, view, and vote on notes.
-                </p>
-                <p className="text-white/80 text-xl mt-4 text-center">
-                  Try adding a note to this page (Don&apos;t worry, only you can
-                  see it).
                 </p>
               </div>
             </div>
