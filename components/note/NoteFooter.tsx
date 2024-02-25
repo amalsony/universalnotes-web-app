@@ -36,7 +36,7 @@ export default function NoteFooter({
       </div>
       <div className={styles.note_footer_container_right}>
         <div className="flex justify-center items-center">
-          {deleteNote && (
+          {deleteNote && note?.isPostedBySelf && (
             <button
               className={styles.note_footer_delete_button}
               onClick={handleDelete}

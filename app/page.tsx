@@ -26,6 +26,7 @@ export { metadata };
 
 // Components
 import Navbar from "@/components/landing/Navbar";
+import HomeRedirect from "@/components/home/HomeRedirect";
 
 export default function Home() {
   return (
@@ -105,6 +106,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <HomeRedirect />
     </div>
   );
 }
