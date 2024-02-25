@@ -19,8 +19,8 @@ export default function Login() {
   const { userInfo } = useAuth();
 
   useEffect(() => {
-    if (userInfo) {
-      router.push(`/login/${userInfo._id}`);
+    if (!userInfo && !authLoading) {
+      router.push("/login");
     }
   }, [userInfo]);
 
@@ -92,6 +92,10 @@ export default function Login() {
                 </h2>
                 <p className="text-white/80 text-xl mt-4 text-center">
                   You can now write, view, and vote on notes.
+                </p>
+                <p className="text-white/80 text-xl mt-4 text-center">
+                  Try adding a note to this page (Don't worry, only you can see
+                  it).
                 </p>
               </div>
             </div>
