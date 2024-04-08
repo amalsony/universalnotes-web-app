@@ -8,7 +8,7 @@ import axios from "axios";
 import Note from "@/components/note/Note";
 import ErrorPageComponent from "@/components/general/ErrorPageComponent";
 
-export default function MyNotes() {
+export default function HiddenNotes() {
   // States
   const [notes, setNotes] = useState<any>([]);
   const [error, setError] = useState<string>("");
@@ -17,7 +17,7 @@ export default function MyNotes() {
   // Fetch notes
   useEffect(() => {
     axios
-      .get("https://api.universalnotes.org/notes/get-notes", {
+      .get("https://api.universalnotes.org/notes/hidden-notes", {
         withCredentials: true,
       })
       .then((res) => {
@@ -137,7 +137,7 @@ export default function MyNotes() {
         }
       )
       .then(() => {
-        removeNote(noteId);
+        updateHiddenStatus(noteId);
       })
       .catch((err) => {
         setError(err.response.data.error);
@@ -163,10 +163,22 @@ export default function MyNotes() {
     });
   }
 
+  //   Update Hidden Status
+  function updateHiddenStatus(noteId: string) {
+    setNotes((prevNotes: any) => {
+      return prevNotes.map((note: any) => {
+        if (note._id === noteId) {
+          return { ...note, isHidden: note.isHidden ? false : true };
+        }
+        return note;
+      });
+    });
+  }
+
   return (
     <div className="max-w-6xl mx-auto px-4">
       <div className="mt-10">
-        <h1 className="text-3xl font-bold text-white/90">My Notes</h1>
+        <h1 className="text-3xl font-bold text-white/90">Hidden Notes</h1>
         <div className="mt-5">
           {loading ? (
             <p className="text-white/70 text-center">Loading...</p>
@@ -174,7 +186,8 @@ export default function MyNotes() {
             <ErrorPageComponent message={error} />
           ) : notes.length === 0 ? (
             <p className="text-white/70">
-              Context you add to webpages will show up here.
+              When you hide notes, they will appear here. You can hide or unhide
+              them.
             </p>
           ) : (
             <div className="flex flex-col mt-5">
@@ -187,6 +200,7 @@ export default function MyNotes() {
                     dislike={() => Dislike(note._id)}
                     undislike={() => Undislike(note._id)}
                     deleteNote={() => DeleteNote(note._id)}
+                    hideNote={() => HideNote(note._id)}
                   />
                 </div>
               ))}

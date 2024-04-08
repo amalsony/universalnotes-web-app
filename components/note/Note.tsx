@@ -17,6 +17,7 @@ export default function Note({
   dislike,
   undislike,
   deleteNote,
+  hideNote,
 }: {
   note: any;
   like: any;
@@ -24,6 +25,7 @@ export default function Note({
   dislike: any;
   undislike: any;
   deleteNote?: any;
+  hideNote?: any;
 }) {
   const niceURL = note ? getNiceURL(note) : null;
 
@@ -67,6 +69,7 @@ export default function Note({
         dislike={dislike}
         undislike={undislike}
         deleteNote={deleteNote}
+        hideNote={hideNote}
       />
     </div>
   );

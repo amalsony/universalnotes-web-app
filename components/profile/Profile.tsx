@@ -1,5 +1,4 @@
 "use client";
-import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 
 // Axios
@@ -12,6 +11,8 @@ import Image from "next/image";
 // Context
 import { useAuth } from "@/context/AuthContext";
 import AccessCodes from "./AccessCodes";
+import RightChevron from "@/assets/RightChevron";
+import Link from "next/link";
 
 export default function Profile() {
   const { userInfo, setUserInfo } = useAuth();
@@ -63,6 +64,14 @@ export default function Profile() {
               </h4>
             </div>
           </div>
+          <Link href="/hidden-notes">
+            <div className="flex w-full border bg-white/[.08] border-white/[.18] p-2 rounded-xl shadow-sm mt-4 hover:bg-white/[.12] transition-all duration-300 cursor-pointer">
+              <div className="ml-2 w-full flex items-center justify-between">
+                <h4 className="font-bold text-white/80">Manage hidden notes</h4>
+                <RightChevron />
+              </div>
+            </div>
+          </Link>
           <AccessCodes />
           <div className="flex justify-center mt-8">
             <button
