@@ -109,11 +109,11 @@ export default function TermsOfService() {
           <h2 className="text-xl text-bold text-black mb-2">9. Jurisdiction</h2>
           <p className="text-base text-bold text-black">
             These Terms are governed by the laws of the Commonwealth of
-            Pennsylvania and those of the United States of America without
-            regard to its conflict of law provisions. You agree to submit to the
-            personal jurisdiction of the federal and state courts located in the
-            Eastern District of Pennsylvania for any actions related to these
-            Terms or your use of the browser extension.
+            Pennsylvania and the United States of America without regard to its
+            conflict of law provisions. You agree to submit to the personal
+            jurisdiction of the federal and state courts located in the Eastern
+            District of Pennsylvania for any actions related to these Terms or
+            your use of the browser extension.
           </p>
         </div>
       </div>
