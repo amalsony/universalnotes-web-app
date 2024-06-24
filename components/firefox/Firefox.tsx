@@ -1,6 +1,5 @@
 export default function Firefox() {
   return (
-    // "Setup UniversalNotes for Firefox" at the top left as a heading with steps 1, 2, 3 below it. Use sample text for now.
     <div className="w-full max-w-4xl flex flex-col items-start">
       <h1 className="text-3xl text-white/90 font-bold my-8">
         Setup UniversalNotes for Firefox
