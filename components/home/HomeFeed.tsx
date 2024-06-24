@@ -34,7 +34,7 @@ export default function HomeFeed() {
   // Fetch notes
   useEffect(() => {
     axios
-      .get("https://api.universalnotes.org/notes/home-feed", {
+      .get("http://localhost:8000/notes/home-feed", {
         withCredentials: true,
       })
       .then((res) => {
@@ -50,7 +50,7 @@ export default function HomeFeed() {
   function Like(noteId: string) {
     axios
       .post(
-        "https://api.universalnotes.org/notes/like",
+        "http://localhost:8000/notes/like",
         {
           noteId,
         },
@@ -69,7 +69,7 @@ export default function HomeFeed() {
   function Unlike(noteId: string) {
     axios
       .post(
-        "https://api.universalnotes.org/notes/unlike",
+        "http://localhost:8000/notes/unlike",
         {
           noteId,
         },
@@ -88,7 +88,7 @@ export default function HomeFeed() {
   function Dislike(noteId: string) {
     axios
       .post(
-        "https://api.universalnotes.org/notes/dislike",
+        "http://localhost:8000/notes/dislike",
         {
           noteId,
         },
@@ -107,7 +107,7 @@ export default function HomeFeed() {
   function Undislike(noteId: string) {
     axios
       .post(
-        "https://api.universalnotes.org/notes/undislike",
+        "http://localhost:8000/notes/undislike",
         {
           noteId,
         },
@@ -126,7 +126,7 @@ export default function HomeFeed() {
   function DeleteNote(noteId: string) {
     axios
       .post(
-        `https://api.universalnotes.org/notes/delete-note`,
+        `http://localhost:8000/notes/delete-note`,
         {
           noteId,
         },

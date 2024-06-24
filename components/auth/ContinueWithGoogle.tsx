@@ -4,7 +4,7 @@ import styles from "./ContinueWithGoogle.module.css";
 const ContinueWithGoogle = () => {
   return (
     <button className={styles.gsi_material_button} style={{ width: 240 }}>
-      <a href="https://api.universalnotes.org/auth/google">
+      <a href="http://localhost:8000/auth/google">
         <div className={styles.gsi_material_button_state}></div>
         <div className={styles.gsi_material_button_content_wrapper}>
           <div className={styles.gsi_material_button_icon}>
