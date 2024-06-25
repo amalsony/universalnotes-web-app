@@ -23,7 +23,7 @@ export default function Profile() {
   function handleLogout() {
     axios
       .post(
-        "http://localhost:8000/auth/logout",
+        "https://api.universalnotes.org/auth/logout",
         {},
         {
           withCredentials: true,

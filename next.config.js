@@ -6,7 +6,7 @@ const rewritesConfig = isDevelopment
   ? [
       {
         source: "/api/:path*",
-        destination: "http://localhost:8000/:path*",
+        destination: "https://api.universalnotes.org/:path*",
       },
     ]
   : [];
