@@ -57,7 +57,7 @@ export default function Firefox() {
           If this feature is enabled, UniversalNotes will send the url of the
           page you&apos;re visiting to our backend server when you open a new
           page, check if there&apos;s a note available and display it on that
-          page. The url won't be stored.
+          page. The url won&apos;t be stored when checking for a note.
         </p>
         <p className="mt-2 ml-4 text-white">
           Like the extension and this website, our{" "}
